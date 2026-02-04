@@ -10,10 +10,16 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class TeamSerializer(serializers.ModelSerializer):
+    member_count = serializers.SerializerMethodField()
+    
     class Meta:
         model = Team
-        fields = ['_id', 'name', 'description', 'created_at']
+        fields = ['_id', 'name', 'description', 'created_at', 'member_count']
         read_only_fields = ['_id', 'created_at']
+    
+    def get_member_count(self, obj):
+        # Count users that belong to this team
+        return User.objects.filter(team_id=str(obj._id)).count()
 
 
 class ActivitySerializer(serializers.ModelSerializer):
