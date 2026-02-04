@@ -1,0 +1,409 @@
+/* GitHub-inspired dark theme */
+.App {
+  min-height: 100vh;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* GitHub-style Navigation */
+.navbar {
+  background-color: #161b22 !important;
+  border-bottom: 1px solid #21262d;
+  padding: 1rem 0;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-brand:hover {
+  opacity: 0.7;
+}
+
+.navbar-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: #c9d1d9 !important;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(177, 186, 196, 0.12);
+}
+
+/* GitHub-style Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #c9d1d9;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: none;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+
+/* GitHub-style Table */
+.table {
+  background-color: transparent;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: none;
+  border: 1px solid #21262d;
+}
+
+.table thead th {
+  background-color: #161b22;
+  color: #8b949e;
+  border: none;
+  border-bottom: 1px solid #21262d;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 8px 16px;
+  text-shadow: none;
+}
+
+.table tbody tr {
+  transition: background-color 0.15s ease;
+  background-color: #0d1117;
+  border-top: 1px solid #21262d;
+}
+
+.table tbody tr:hover {
+  background-color: #161b22;
+  transform: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.table tbody td {
+  padding: 8px 16px;
+  vertical-align: middle;
+  border-bottom: none;
+  border-top: 1px solid #21262d;
+  color: #c9d1d9;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* GitHub-style Cards */
+.card {
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  box-shadow: none;
+  transition: border-color 0.15s ease;
+  height: 100%;
+  background-color: #0d1117;
+  background-clip: border-box;
+}
+
+.card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: #30363d;
+}
+
+.card-title {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  color: #58a6ff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-text {
+  color: #8b949e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* GitHub-style Badges */
+.badge {
+  padding: 0 7px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 2em;
+  box-shadow: none;
+  text-transform: none;
+  letter-spacing: 0;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.badge.bg-primary,
+.badge-primary {
+  background-color: #1f6feb !important;
+  color: #ffffff;
+  border-color: rgba(240, 246, 252, 0.1);
+}
+
+.badge.bg-success,
+.badge-success {
+  background-color: #238636 !important;
+  color: #ffffff;
+  border-color: rgba(240, 246, 252, 0.1);
+}
+
+.badge.bg-warning,
+.badge-warning {
+  background-color: #9e6a03 !important;
+  color: #ffffff;
+  border-color: rgba(240, 246, 252, 0.1);
+}
+
+.badge.bg-danger,
+.badge-danger {
+  background-color: #da3633 !important;
+  color: #ffffff;
+  border-color: rgba(240, 246, 252, 0.1);
+}
+
+.badge.bg-info,
+.badge-info {
+  background-color: #388bfd !important;
+  color: #ffffff;
+  border-color: rgba(240, 246, 252, 0.1);
+}
+
+.badge.text-dark {
+  color: #ffffff !important;
+}
+
+/* GitHub-style Alerts */
+.alert {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: none;
+  border-left: none;
+  background-color: #161b22;
+  padding: 16px;
+  color: #c9d1d9;
+}
+
+.alert-info {
+  border-color: #1f6feb;
+  background-color: rgba(56, 139, 253, 0.15);
+  color: #58a6ff;
+}
+
+.alert-danger {
+  border-color: #da3633;
+  background-color: rgba(248, 81, 73, 0.15);
+  color: #f85149;
+}
+
+.alert-heading {
+  color: #c9d1d9;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* GitHub-style Loading & States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.spinner-border {
+  width: 2rem;
+  height: 2rem;
+  border-width: 0.2rem;
+  border-color: #58a6ff;
+  border-right-color: transparent;
+}
+
+/* Container Spacing */
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* GitHub-style Tables */
+.table-responsive {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #21262d;
+}
+
+/* Additional GitHub Styles */
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+/* GitHub-style Buttons */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 16px;
+  transition: background-color 0.2s ease;
+  text-transform: none;
+  letter-spacing: 0;
+  border: 1px solid;
+  box-shadow: none;
+  line-height: 20px;
+}
+
+.btn:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #238636;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #2ea043;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-info {
+  background-color: #1f6feb;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-info:hover {
+  background-color: #388bfd;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #238636;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #2ea043;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-warning {
+  background-color: #9e6a03;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background-color: #bb7506;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #da3633;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #f85149;
+  border-color: rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+}
+
+/* GitHub-style List Groups */
+.list-group-item {
+  border: none;
+  border-top: 1px solid #21262d;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.list-group-item:first-child {
+  border-top: none;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* GitHub-style Rank Badge */
+.rank-badge {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid #21262d;
+}
+
+.rank-badge.gold {
+  background-color: #ffd700;
+  color: #0d1117;
+  border-color: #ffd700;
+}
+
+.rank-badge.silver {
+  background-color: #c0c0c0;
+  color: #0d1117;
+  border-color: #c0c0c0;
+}
+
+.rank-badge.bronze {
+  background-color: #cd7f32;
+  color: #ffffff;
+  border-color: #cd7f32;
+}
+
+.rank-badge.default {
+  background-color: #21262d;
+  color: #8b949e;
+  border-color: #30363d;
+}
